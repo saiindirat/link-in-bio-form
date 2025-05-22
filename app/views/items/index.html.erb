@@ -1,0 +1,12 @@
+<h1>My Links</h1>
+
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <a href="<%= item.link_url %>">
+        <img src="<%= item.thumbnail_url %>" alt="" width="100">
+        <%= item.link_description %>
+      </a>
+    </li>
+  <% end %>
+</ul>
